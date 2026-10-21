@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz de Anatomia Muscular</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+<header class="hero">
+  <div class="eyebrow">Educação Física • revisão ativa</div>
+  <h1>Quiz de Anatomia Muscular</h1>
+  <p>Estude origem, inserção, função e região anatômica. Treine ou faça um simulado com tempo e recordes.</p>
+  <div class="pills"><span class="pill">100+ questões</span><span class="pill">3 níveis</span><span class="pill">Simulado</span><span class="pill">Cronômetro</span><span class="pill">Recordes</span></div>
+</header>
+
+<section id="setup" class="panel">
+  <h2>Configure seu treino</h2>
+  <div class="config-grid">
+    <label>Nível
+      <select id="difficulty"><option value="todos">Todos os níveis</option><option value="facil">Fácil</option><option value="medio">Médio</option><option value="dificil">Difícil</option></select>
+    </label>
+    <label>Modo
+      <select id="mode"><option value="treino">Treino com explicações</option><option value="simulado">Simulado de prova</option></select>
+    </label>
+    <label>Quantidade
+      <select id="amount"><option value="10">10 questões</option><option value="20">20 questões</option><option value="30">30 questões</option><option value="50">50 questões</option><option value="todas">Banco completo</option></select>
+    </label>
+    <label>Tempo do simulado
+      <select id="duration"><option value="10">10 minutos</option><option value="20" selected>20 minutos</option><option value="30">30 minutos</option><option value="45">45 minutos</option><option value="60">60 minutos</option></select>
+    </label>
+  </div>
+  <p id="bankCount" class="muted"></p>
+  <p class="muted">Os recordes ficam salvos neste navegador. Para manter os dados, não limpe os dados locais do navegador.</p>
+  <div class="actions"><button id="startBtn" class="btn primary">Começar</button><button id="recordsBtn" class="btn secondary">Ver recordes</button><button id="clearRecordsBtn" class="btn secondary">Apagar recordes</button></div>
+  <div id="records" class="records hidden"></div>
+</section>
+
+<section id="quiz" class="panel hidden">
+  <div class="topline"><span id="counter"></span><span id="scoreLive"></span><span id="timer">⏱ 00:00</span></div>
+  <div class="progress"><span id="progressBar"></span></div>
+  <h2 id="question"></h2>
+  <div id="options" class="options"></div>
+  <div id="feedback" class="feedback" aria-live="polite"></div>
+  <details class="hint"><summary>Ver dica</summary><p id="hint"></p></details>
+  <div class="actions"><button id="checkBtn" class="btn primary" disabled>Confirmar resposta</button><button id="nextBtn" class="btn primary hidden">Próxima questão →</button><button id="quitBtn" class="btn secondary">Encerrar</button></div>
+</section>
+
+<section id="results" class="panel results hidden">
+  <div class="eyebrow blue">Resultado final</div><h2 id="resultTitle">Quiz concluído!</h2>
+  <div id="scoreFinal" class="score"></div><p id="resultText" class="result-sub"></p>
+  <div class="actions center"><button id="restartBtn" class="btn primary">Novo quiz</button><button id="resultRecordsBtn" class="btn secondary">Ver recordes</button></div>
+  <div id="review" class="review"></div>
+</section>
+<footer>Material de estudo. Confirme detalhes anatômicos com o material adotado pela sua disciplina.</footer>
+</main>
+<script src="js/facts.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
