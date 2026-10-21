@@ -53,10 +53,73 @@
   <div class="actions center"><button id="restartBtn" class="btn primary">Novo quiz</button><button id="resultRecordsBtn" class="btn secondary">Ver recordes</button></div>
   <div id="review" class="review"></div>
 </section>
-<footer>Material de estudo. Confirme detalhes anatômicos com o material adotado pelo portal.<br>Refencias<br>KENHUB. Overview of the back muscles. Kenhub, 2023. Disponível em: https://www.kenhub.com/en/library/anatomy/overview-of-back-muscles. Acesso em: 20 out. 2026.<br>KENHUB. Shoulder muscles: Anatomy and functions. Kenhub. Disponível em: https://www.kenhub.com/en/library/anatomy/shoulder-muscles. Acesso em: 20 out. 2026.<br>
-KENHUB. Arm muscles: Anatomy, attachments, innervation, function. Kenhub, 2023. Disponível em: https://www.kenhub.com/en/library/anatomy/arm-muscles. Acesso em: 20 out. 2026.<br>KENHUB. Arm muscles: Anatomy, attachments, innervation, function. Kenhub, 2023. Disponível em: https://www.kenhub.com/en/library/anatomy/arm-muscles. Acesso em: 20 out. 2026.<br>
-ICCARDI, Marco A.; TARIQ, Muhammad Ali; VALLE, Cristina. Anatomy, Bony Pelvis and Lower Limb: Psoas Major. In: STATPEARLS. Treasure Island (FL): StatPearls Publishing, 2026. Disponível em: https://www.ncbi.nlm.nih.gov/books/NBK535418/. Acesso em: 20 out. 2026.<br>
-ICCARDI, Marco A.; TARIQ, Muhammad Ali; VALLE, Cristina. Anatomy, Bony Pelvis and Lower Limb: Psoas Major. In: STATPEARLS. Treasure Island (FL): StatPearls Publishing, 2026. Disponível em: https://www.ncbi.nlm.nih.gov/books/NBK535418/. Acesso em: 20 out. 2026.<br>ICCARDI, Marco A.; TARIQ, Muhammad Ali; VALLE, Cristina. Anatomy, Bony Pelvis and Lower Limb: Psoas Major. In: STATPEARLS. Treasure Island (FL): StatPearls Publishing, 2026. Disponível em: https://www.ncbi.nlm.nih.gov/books/NBK535418/. Acesso em: 20 out. 2026.</footer>
+
+<footer class="site-footer">
+  <p class="footer-note">
+    Material de estudo. Confirme os detalhes anatômicos
+    com o material adotado pelo seu curso ou instituição.
+  </p>
+
+  <details class="footer-references">
+    <summary>Referências bibliográficas</summary>
+
+    <ul>
+      <li>
+        <strong>KENHUB.</strong>
+        <em>Overview of the back muscles.</em>
+        Kenhub.
+        <a href="https://www.kenhub.com/en/library/anatomy/overview-of-back-muscles"
+           target="_blank" rel="noopener noreferrer">
+          Acessar fonte
+        </a>
+      </li>
+
+      <li>
+        <strong>KENHUB.</strong>
+        <em>Shoulder muscles: Anatomy and functions.</em>
+        Kenhub.
+        <a href="https://www.kenhub.com/en/library/anatomy/shoulder-muscles"
+           target="_blank" rel="noopener noreferrer">
+          Acessar fonte
+        </a>
+      </li>
+
+      <li>
+        <strong>KENHUB.</strong>
+        <em>Arm muscles: Anatomy, attachments, innervation, function.</em>
+        Kenhub.
+        <a href="https://www.kenhub.com/en/library/anatomy/arm-muscles"
+           target="_blank" rel="noopener noreferrer">
+          Acessar fonte
+        </a>
+      </li>
+
+      <li>
+        <strong>SICCARDI, Marco A.; TARIQ, Muhammad Ali; VALLE, Cristina.</strong>
+        <em>Anatomy, Bony Pelvis and Lower Limb: Psoas Major.</em>
+        In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK535418/"
+           target="_blank" rel="noopener noreferrer">
+          Acessar fonte no NCBI Bookshelf
+        </a>
+      </li>
+    </ul>
+
+    <p class="reference-note">
+      Referências consultadas para fins educacionais.
+    </p>
+  </details>
+
+  <p class="footer-copyright">
+    © <span id="current-year"></span> Quiz de Anatomia Muscular
+  </p>
+</footer>
+
+<script>
+  document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+</script>
+
 </main>
 <script src="js/facts.js"></script>
 <script src="js/questions.js"></script>
